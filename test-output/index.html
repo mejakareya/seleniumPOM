@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,7 +107,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="childYearSelect">childYearSelect</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="title">title</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -119,6 +119,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="calenderClick">calenderClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="checkInDate">checkInDate</a> <!-- method navigator-link -->
@@ -146,6 +151,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="childYearSelect">childYearSelect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="hotelClick">hotelClick</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -157,11 +167,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="selectPlace">selectPlace</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.HotelBook" class="method navigator-link" hash-for-method="title">title</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -193,8 +198,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MacBook-Air-von-Jakareya.local&apos;, ip: &apos;fe80:0:0:0:438:f20c:bfaa:8f7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/yf/701cky2x1bz...}, goog:chromeOptions: {debuggerAddress: localhost:52529}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 62f8c10b722c789610e1a5400d805a6e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/yf/701cky2x1bz...}, goog:chromeOptions: {debuggerAddress: localhost:56892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3112622f2094f366d41af9f31cbaf473
 *** Element info: {Using=xpath, value=//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[2]/div[6]/div[2]/div[4]/div[1]/label[1]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -214,8 +219,8 @@ Session ID: 62f8c10b722c789610e1a5400d805a6e
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at pages.booking.check_Box(booking.java:64)
-	at test.HotelBook.checkBox(HotelBook.java:77)
+	at pages.booking.check_Box(booking.java:72)
+	at test.HotelBook.checkBox(HotelBook.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -246,18 +251,18 @@ Session ID: 62f8c10b722c789610e1a5400d805a6e
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="childYearSelect">
-                  </a> <!-- childYearSelect -->
-                  <span class="method-name">childYearSelect</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[6]/div[1]/div[1]/div[1]/div[2]/button[3]/span[1]&quot;}
+                  <a name="title">
+                  </a> <!-- title -->
+                  <span class="method-name">title</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#property_264882&quot;}
   (Session info: chrome=100.0.4896.75)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MacBook-Air-von-Jakareya.local&apos;, ip: &apos;fe80:0:0:0:438:f20c:bfaa:8f7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/yf/701cky2x1bz...}, goog:chromeOptions: {debuggerAddress: localhost:52529}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 62f8c10b722c789610e1a5400d805a6e
-*** Element info: {Using=xpath, value=//body/div[6]/div[1]/div[1]/div[1]/div[2]/button[3]/span[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/yf/701cky2x1bz...}, goog:chromeOptions: {debuggerAddress: localhost:56892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3112622f2094f366d41af9f31cbaf473
+*** Element info: {Using=css selector, value=#property_264882}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -270,14 +275,14 @@ Session ID: 62f8c10b722c789610e1a5400d805a6e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at pages.booking.childAge_Year(booking.java:54)
-	at test.HotelBook.childYearSelect(HotelBook.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at pages.booking.get_Title(booking.java:77)
+	at test.HotelBook.title(HotelBook.java:91)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -316,6 +321,13 @@ Session ID: 62f8c10b722c789610e1a5400d805a6e
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="calenderClick">
+                  </a> <!-- calenderClick -->
+                  <span class="method-name">calenderClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkInDate">
                   </a> <!-- checkInDate -->
                   <span class="method-name">checkInDate</span>
@@ -351,6 +363,13 @@ Session ID: 62f8c10b722c789610e1a5400d805a6e
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="childYearSelect">
+                  </a> <!-- childYearSelect -->
+                  <span class="method-name">childYearSelect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="hotelClick">
                   </a> <!-- hotelClick -->
                   <span class="method-name">hotelClick</span>
@@ -370,19 +389,12 @@ Session ID: 62f8c10b722c789610e1a5400d805a6e
                   <span class="method-name">selectPlace</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="title">
-                  </a> <!-- title -->
-                  <span class="method-name">title</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/yf/701cky2x1bz7rrm24pbb51lr0000gn/T/testng-eclipse--361201287/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/yf/701cky2x1bz7rrm24pbb51lr0000gn/T/testng-eclipse-1593332101/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -431,51 +443,55 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'selectPlace')
 data.setCell(0, 2, 'test.HotelBook')
-data.setCell(0, 3, 18889);
+data.setCell(0, 3, 13160);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkInDate')
+data.setCell(1, 1, 'hotelClick')
 data.setCell(1, 2, 'test.HotelBook')
-data.setCell(1, 3, 9517);
+data.setCell(1, 3, 8112);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'hotelClick')
+data.setCell(2, 1, 'calenderClick')
 data.setCell(2, 2, 'test.HotelBook')
-data.setCell(2, 3, 8353);
+data.setCell(2, 3, 7354);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'childSelect')
+data.setCell(3, 1, 'checkOutDate')
 data.setCell(3, 2, 'test.HotelBook')
-data.setCell(3, 3, 8169);
+data.setCell(3, 3, 7240);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'childYearSelect')
 data.setCell(4, 2, 'test.HotelBook')
-data.setCell(4, 3, 5104);
+data.setCell(4, 3, 7123);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkOutDate')
+data.setCell(5, 1, 'searchPlace')
 data.setCell(5, 2, 'test.HotelBook')
-data.setCell(5, 3, 3376);
+data.setCell(5, 3, 6629);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'childAgeSelect')
+data.setCell(6, 1, 'checkInDate')
 data.setCell(6, 2, 'test.HotelBook')
-data.setCell(6, 3, 3128);
+data.setCell(6, 3, 2879);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'childConfirm')
 data.setCell(7, 2, 'test.HotelBook')
-data.setCell(7, 3, 3118);
+data.setCell(7, 3, 2298);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'title')
+data.setCell(8, 1, 'childSelect')
 data.setCell(8, 2, 'test.HotelBook')
-data.setCell(8, 3, 3039);
+data.setCell(8, 3, 2139);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'searchPlace')
+data.setCell(9, 1, 'childAgeSelect')
 data.setCell(9, 2, 'test.HotelBook')
-data.setCell(9, 3, 2704);
+data.setCell(9, 3, 2121);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'checkBox')
+data.setCell(10, 1, 'title')
 data.setCell(10, 2, 'test.HotelBook')
-data.setCell(10, 3, 52);
+data.setCell(10, 3, 1187);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkBox')
+data.setCell(11, 2, 'test.HotelBook')
+data.setCell(11, 3, 80);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -513,51 +529,55 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">hotelClick</span>
-                <span class="method-start">7858 ms</span>
+                <span class="method-start">9424 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchPlace</span>
-                <span class="method-start">16333 ms</span>
+                <span class="method-start">17687 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectPlace</span>
-                <span class="method-start">19049 ms</span>
+                <span class="method-start">24332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calenderClick</span>
+                <span class="method-start">37498 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkInDate</span>
-                <span class="method-start">37943 ms</span>
+                <span class="method-start">44862 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkOutDate</span>
-                <span class="method-start">47466 ms</span>
+                <span class="method-start">47748 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">childSelect</span>
-                <span class="method-start">50853 ms</span>
+                <span class="method-start">55008 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">childAgeSelect</span>
-                <span class="method-start">59042 ms</span>
+                <span class="method-start">57162 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">childYearSelect</span>
-                <span class="method-start">62187 ms</span>
+                <span class="method-start">59297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">childConfirm</span>
-                <span class="method-start">67314 ms</span>
+                <span class="method-start">66430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkBox</span>
-                <span class="method-start">70441 ms</span>
+                <span class="method-start">68732 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">title</span>
-                <span class="method-start">70503 ms</span>
+                <span class="method-start">68836 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

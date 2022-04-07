@@ -28,12 +28,20 @@ public class booking {
 		selectPlace.click();
 	}
 	
-	@FindBy(xpath = "//div[contains(@aria-label,'Mon Sep 12 2022')]") WebElement checkInDate;
+	@FindBy(xpath = "//body/div[5]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]") WebElement calenderClick;
+	public void calender_Click() {
+		calenderClick.click();
+		calenderClick.click();
+		calenderClick.click();
+		calenderClick.click();
+	}
+	
+	@FindBy(xpath = "//div[contains(@aria-label,'Mon May 30 2022')]") WebElement checkInDate;
 	public void checkIn_Date() {
 		checkInDate.click();
 	}
 	
-	@FindBy(xpath = "//div[contains(@aria-label,'Wed Sep 14 2022')]") WebElement checkOutDate;
+	@FindBy(xpath = "//div[contains(@aria-label,'Tue May 31 2022')]") WebElement checkOutDate;
 	public void checkOut_Date() {
 		checkOutDate.click();
 	}
